@@ -12,7 +12,7 @@ def enviar_mensagem(mensagem, lista_mensagens=[]):
     try:
         # Envia a mensagem para a API do OpenAI e obtém a resposta
         resposta = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-3.5-turbo-0125",
             messages=lista_mensagens,
         )
 
